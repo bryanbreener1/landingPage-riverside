@@ -1,0 +1,619 @@
+:root {
+    --color-primario: #F5F5F5;
+    --color-secundario: #5ca547;
+    --color-tres: #c9c9c9;
+}
+
+/*WHATSAPP BUTTON*/
+.whatsapp_wrapper{
+    width: 180px;
+    background-color: var(--color-secundario);
+    border-radius: 25px;
+    padding: 5px 10px;
+    position: fixed;
+    right: 5vw;
+    bottom: 5vh;
+    z-index: 10;
+    -webkit-box-shadow: 0px 0px 27px -8px rgba(0,0,0,0.91);
+    -moz-box-shadow: 0px 0px 27px -8px rgba(0,0,0,0.91);
+    box-shadow: 0px 0px 27px -8px rgba(0,0,0,0.91);
+}
+.whatsapp_wrapper-link{
+    text-decoration: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    font-family: 'Sen';
+    font-size: 1.3rem;
+    font-weight: 800;
+}
+
+.whatsapp_wrapper img{
+    width: 18% !important;
+}
+
+
+/*TESTIMONIOS*/
+.testimonial_wrapper{
+    padding-bottom:100px;
+    background-color: #F5F5F5;
+}
+.testimonial-container {
+    margin: 0 auto;
+    text-align: center;
+    overflow: hidden;
+    width: 80vw;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Sen';
+    font-style: italic;
+}
+
+.testimonial {
+    display: none;
+}
+
+.active {
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.testimonial p {
+    font-family: 'Sen';
+    font-size: 1.3rem;
+}
+.testimonial .guest_name{
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+/* CSS GENERAL*/
+.landing_wrapper{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.landing_wrapper img {
+    width: 100%;
+    display: block;
+}
+
+.landing_wrapper p, h2, h3 {
+    margin: 0;
+    padding: 0;
+}
+.landing_wrapper picture{
+    font-size: 0;
+    display: block;
+}
+
+
+/* FLYER*/
+.flyer{
+    height: 100vh;
+    overflow: hidden;
+}
+.riverside_flyer{
+    position: relative;
+    height: 100vh;
+    background-image: url('https://www.riversideecoliving.com/wp-content/uploads/2023/09/bg-banner1.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    animation: zoomAnimation 3s ease-in-out forwards;
+}
+
+.flyer_text{
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-65%, -50%);
+    padding: 10px;
+    width: 30vw;
+    min-width: 250px;
+
+}
+
+.flyer_text-p1{
+    font-family: 'Schoolbell';
+    font-weight: 800;
+    color: #4ca300;
+    animation: sizeAnimation 1s ease-in-out forwards ;
+}
+.flyer_text-p2{
+    font-family: 'Sen';
+    font-weight: 700;
+    animation: sizeAnimationh2 1s ease-in-out forwards ;
+}
+.flyer_text-p{
+    font-family: 'Sen';
+    font-weight: 600;
+    text-align: left;
+    font-size: 2rem;
+    animation: textAnimation 1s ease-in-out forwards; 
+}
+.flyer_searcher{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #D8D8D8;
+}
+
+.hr_input{
+    border-radius: 10px 0 0 10px;
+}
+
+/* container-landing */  
+
+.container-landing{
+    display: flex;
+    background-color: #f5f5f5;
+    padding: 150px 100px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.description p {
+    font-size: 18px;
+    margin: 1.5rem 0;
+    font-family: 'Sen';
+    font-weight: 400;
+}
+.description_button {
+    background-color: #5ca547;
+    border: 2px solid #5ca547;
+    padding: 17px 40px;
+    border-radius: 2rem;
+    font-size: 18px;
+    font-weight: 700;
+    width: fit-content;
+    color: white;
+}
+.description a  {
+    font-family: 'Sen';
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: inherit;
+    font-size: 1.3rem;
+}
+
+.description_button:hover{
+    background-color: white;
+    color: #5ca547;
+}
+.description{
+    width: 48%;
+    padding: 0 3rem;
+}
+.img-description{
+    width: 48%;
+}
+
+.first_title{
+    font-family: 'Schoolbell';
+    font-weight: 400;
+    font-size: 50px;
+    color: #76a34e;
+}
+.second_title{
+    font-size: 50px;
+    font-family: 'Sen';
+    font-weight: 800;
+    line-height: 1;
+}
+
+
+/* details*/  
+
+.details{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px,19vw));
+    justify-content: center;
+    align-items: start;
+    gap: 1rem;
+    padding: 120px 80px;
+}
+.animation {
+    transform: translateY(200px);
+    transition: all 0.5s;
+}
+
+.details div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.details h3{
+    text-align: center;
+    font-family: Sen;
+    font-size: 24px;
+    font-weight: 600;
+}
+.details img{
+    width: 170px;
+}
+
+.cowork_details{
+    color: #76a34e;
+}
+.accommodation_details{
+    background-color: #D8D8D8;
+}
+/*BENEFITS*/
+
+.benefits{
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+    text-align: center;
+    font-size: 50px;
+}
+.reviews{
+    background-color: white;
+}
+.benefits h2{
+    font-family: 'Sen';
+    font-weight: 800;
+}
+.program_benefits{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(350px, 25vw));
+    padding: 60px;
+    justify-content: center;
+    gap: 4rem;
+    opacity: 0.8;
+}
+.program_benefits div{
+    border: 1px solid black;
+    border-radius: 1rem;
+    padding: 1rem;
+    height: 150px;
+    font-size: 18px;
+    font-family: 'sen';
+    background-color: #D8D8D8;
+}
+.program_benefits-p1{
+    color: #5ca547;
+    font-weight: 600;
+    margin-bottom: 20px !important;
+
+}
+/*BOOKING BUTTON*/
+.booking_button{
+    background-color: #5ca547;
+    padding: 10px 40px;
+    border-radius: 2rem;
+    font-size: 18px;
+    width: fit-content;
+    margin: 0 auto 80px auto;
+    border: 2px solid #5ca547;
+    color: white;
+    display: none;
+}
+.booking_button a {
+    text-decoration: none;
+    font-weight: 700;
+    color: inherit;
+}
+.booking_button:hover{
+    background-color: white;
+    color: #5ca547;
+}
+
+
+/*TASTE*/
+.taste{
+    background-image: url('https://www.riversideecoliving.com/wp-content/uploads/2023/09/preparacion_bebida.webp');
+    height: 85vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding: 200px 10vw;
+}
+.taste_text{
+    width: 45%;
+    min-width: 500px;
+    background-color: #f5f5f5;
+    padding: 2rem;
+    border-radius: 2rem;
+    opacity: 0.9;
+}
+.taste_details{
+    background-color: #412929;
+}
+.taste_details h3{
+    color: #F9DFC9;
+}
+/*HEALTH*/
+.health{
+    background-image: url('https://www.riversideecoliving.com/wp-content/uploads/2023/09/Franja-Yoga-Studio.webp');
+    height: 80vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding: 200px 10vw;
+}
+.health_details{
+    background-color: #EBCDB3;
+}
+
+/*PRICES*/
+.landing_prices{
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 160px;
+}
+.container-price{
+    width: 80vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(200px, 400px));
+    gap: 1rem;
+    justify-content: center;
+}
+.container-price p{
+    display: inline;
+}
+
+svg path{
+    fill: green;
+}
+
+.svg_wave-main path{
+    fill: #5ca547;
+}
+.svg_wave path{
+    fill: var(--color-tres);
+}
+
+.box-plan{
+    border: 1px solid green;
+    border-radius: 1rem;
+    font-size: 1.2rem;
+    margin-top: 3rem;
+}
+
+.standar h3{
+    text-align: center;
+    font-size: 1.8rem;
+    background-color: var(--color-secundario);
+    color: white;
+    font-size: 2rem;
+    height: 100px;
+    line-height: 100px;
+}
+.basic h3, .premium h3{
+    text-align: center;
+    font-size: 1.8rem;
+    background-color: var(--color-tres);
+    color: black;
+    font-size: 2rem;
+    height: 100px;
+    border-radius:1rem 1rem  0 0;
+    line-height: 100px;
+}
+
+.features{
+    width: 85%;
+    margin: 0 auto;
+}
+.features li{
+    align-items: center;
+    display: flex;
+    margin: 0.5rem 0;
+    
+}
+.features p{
+    margin-left: 0.5rem;
+    margin-bottom: 0;
+}
+
+.standar .prices-button{
+    text-decoration: none;
+    border: 2px solid #5ca547;
+    border-radius: 0.6rem;
+    padding: 0.6rem 0;
+    margin: 1rem 1rem 3rem 1rem;
+    background-color: #5ca547;
+    color: white;
+    display: block;
+    text-align: center;
+    font-size: 1.3rem;
+}
+.prices-button:hover{
+    background-color: white;
+    color: #5ca547;
+    font-weight: 600;
+}
+
+.prices-button-n{
+    background-color: var(--color-tres);
+    color: black;
+    text-decoration: none;
+    border: 2px solid black;
+    border-radius: 0.6rem;
+    padding: 0.6rem 0;
+    margin: 1rem 1rem 3rem 1rem;
+    display: block;
+    text-align: center;
+    font-size: 1.3rem;
+}
+.prices-button-n:hover{
+    background-color: white;
+}
+
+.unavailable{
+    opacity: 0.4;
+}
+.unavailable path{
+    fill: red;
+}
+.standar{
+    position: relative;
+    border-radius: 0 0 1rem 1rem;
+    border: 3px solid #5ca547;
+}
+.popular{
+    height: 40px;
+    position: absolute;
+    background-color: white;
+    top: -40px;
+    border: 3px solid #5ca547;
+    right: -3px;
+    border-radius: 1.5rem 1.5rem 0 0;
+    left: -3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #5ca547;
+    font-weight: 600;
+
+}
+.popular p{
+    margin: 0;
+}
+
+
+
+@keyframes zoomAnimation {
+    0% {
+        transform: scale(1); /* Escala normal del 100% */
+    }
+    100% {
+        transform: scale(1.05); /* Escala al 110% para el efecto de zoom */
+    }
+}
+@keyframes textAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes sizeAnimation {
+    0% {
+        font-size: 30px;
+    }
+    100% {
+        font-size: 35px;
+    }
+}
+@keyframes sizeAnimationh2 {
+    0% {
+        font-size: 50px;
+    }
+    100% {
+        font-size: 64px;
+    }
+}
+
+@media (max-width:480px){
+    .riverside_flyer{
+        background-image: url('https://www.riversideecoliving.com/wp-content/uploads/2023/09/bg-banner-mov.webp');
+        animation: none;
+    }
+}
+
+@media  (max-width: 1024px) {
+
+    .flyer_text{
+        left: 45%;
+        height: 40vh;
+    }
+    .riverside_flyer .flyer_text-p2{
+        margin-bottom: 100px;
+    }
+
+    .container-landing{
+        flex-direction: column;
+        padding:50px 0 50px 0;
+    }
+    .description{
+        min-width: 0;
+        width: 90%;
+        padding: 0;
+    }
+    .img-description{
+        width: 90%;
+        margin: 40px 0;
+    }
+    
+    .details{
+        flex-direction: column;
+    }
+    .benefits{
+        font-size: 1.5em;
+    }
+    .program_benefits{
+        gap: 2rem;
+    }
+
+    .flyer_text-p{
+        font-size: 1.3rem;
+    }
+    .taste{
+        justify-content: center;
+        padding: 0;
+    }
+    .taste_text{
+        padding: 1rem !important;
+    }
+    .health{
+        padding: 0;
+        justify-content: center;
+
+    }
+    .first_title{
+        font-size: 2rem;
+    }
+    .second_title{
+        font-size: 1.8rem;
+    }
+    .container-price{
+        width: 90vw;
+    }
+    
+    .testimonial-container{
+        width: 90vw;
+    }
+    .booking_button{
+        display: block;
+    }
+    
+    @keyframes sizeAnimation {
+        0% {
+            font-size: 10px;
+        }
+        100% {
+            font-size: 16px;
+        }
+    }
+    @keyframes sizeAnimationh2 {
+        0% {
+            font-size: 30px;
+        }
+        100% {
+            font-size: 36px;
+        }
+    }
+    
+}
